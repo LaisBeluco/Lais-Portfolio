@@ -1,0 +1,31 @@
+.introducao {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introducao-text {
+  line-height: 2.3rem;
+  position: relative;
+}
+
+.introducao-text::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 40px;
+  background: url("../img/logo.svg") no-repeat center;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -35px;
+}
+
+@media (max-width: 750px) {
+  .introducao {
+    font-size: 1rem;
+  }
+}
